@@ -9,28 +9,50 @@ public class SliderChange : MonoBehaviour
     public GameObject point1;
     public GameObject point2;
     public GameObject point3;
+    private bool fullsreen;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (slider.value == 1)
+
+    }
+
+    public void Resolution()
+    {
+        if (slider.value == 2)
         {
             point3.SetActive(true);
-        }else if(slider.value >= 0.5)
+            Screen.SetResolution(2560, 1440, fullsreen, 60);
+        }
+        else if (slider.value >= 1)
         {
             point2.SetActive(true);
             point3.SetActive(false);
-        }else if(slider.value <= 0.5)
+            Screen.SetResolution(1920, 1080, fullsreen, 60);
+        }
+        else if (slider.value < 1)
         {
             point1.SetActive(true);
             point2.SetActive(false);
             point3.SetActive(false);
+            Screen.SetResolution(1280, 720, fullsreen, 60);
         }
     }
+    
+    public void OffFullScreen()
+    {
+        Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, false, 60);
+        fullsreen = false;
+    }
 
+    public void OnFullScreen()
+    {
+        Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, true, 60);
+        fullsreen = true;
+    }
 }

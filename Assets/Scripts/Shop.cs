@@ -11,17 +11,23 @@ public class Shop : MonoBehaviour
     public Economy economy;
     //referencja dla tekstu iloœci ogólnej kasy w sklepie
     public TextMeshProUGUI shopText;
+    //referencja dla obiektu mówi¹cego ¿e nie mamy kasy by kupiæ
+    public GameObject noMoney;
     //wartosc reprezentuj¹ca koszt
     private int val;
-    public void Buy()
+    public void Buy(string select)
     {
-        //TO NAPRAWIÆ
-        TextMeshProUGUI select = GetComponent<TextMeshProUGUI>();
-        Debug.Log(select.text);
-        val = Convert.ToInt32(select.text);
+        val = Convert.ToInt32(select);
         Debug.Log(val);
-        economy.setGold(-val);
-        shopText.text = "" + economy.getGold();
+        if (val <= economy.getGold())
+        {
+            economy.setGold(-val);
+            shopText.text = "" + economy.getGold();
+        }
+        else
+        {
+            noMoney.SetActive(true);
+        }
     }
 
 }
