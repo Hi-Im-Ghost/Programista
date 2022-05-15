@@ -15,6 +15,8 @@ public class Shop : MonoBehaviour
     public GameObject noMoney;
     //wartosc reprezentuj¹ca koszt
     private int val;
+
+    //Metoda s³u¿aca do kupienia produktu i zmiany kasy
     public void Buy(string select)
     {
         val = Convert.ToInt32(select);

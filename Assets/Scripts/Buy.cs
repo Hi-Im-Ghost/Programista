@@ -6,7 +6,9 @@ using TMPro;
 using System;
 public class Buy : MonoBehaviour
 {
+    //Zmienna przechowuj¹ca wartoœæ tekstow¹ 
     private string select;
+    //Referencja do skryptu sklepu
     public Shop shop;
 
     public void Select()
