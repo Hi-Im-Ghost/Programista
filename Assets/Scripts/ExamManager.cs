@@ -116,7 +116,7 @@ public class ExamManager : MonoBehaviour
         endPanel.SetActive(true);
 
         //Dodaj do ogólnej iloœci zdobytych punktów edukacji zdobyta wartoœæ
-        economy.setEdu(score);
+        economy.addEdu(score);
 
         //Wyœwietlanie wyników, punktów i czasu
         scoreText.text = ""+score;

@@ -23,7 +23,7 @@ public class Shop : MonoBehaviour
         Debug.Log(val);
         if (val <= economy.getGold())
         {
-            economy.setGold(-val);
+            economy.addGold(-val);
             shopText.text = "" + economy.getGold();
         }
         else
