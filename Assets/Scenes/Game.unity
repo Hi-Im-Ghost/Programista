@@ -1731,6 +1731,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 349888865}
         m_TargetAssemblyTypeName: Pause, Assembly-CSharp
+        m_MethodName: ResumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 349888865}
+        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
         m_MethodName: Reset
         m_Mode: 1
         m_Arguments:
@@ -8733,7 +8745,6 @@ GameObject:
   - component: {fileID: 349888864}
   - component: {fileID: 349888867}
   - component: {fileID: 349888865}
-  - component: {fileID: 349888866}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -8771,18 +8782,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa148547383dec34d989802aa0f8e74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &349888866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349888863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d078498b46adfa84daf0da7e97437cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &349888867
@@ -18422,7 +18421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -3.638e-12, y: -53}
+  m_AnchoredPosition: {x: -3.638e-12, y: -52.999985}
   m_SizeDelta: {x: 1203.255, y: -55.161987}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &671776357
@@ -27713,7 +27712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -3.638e-12, y: -53}
+  m_AnchoredPosition: {x: -3.638e-12, y: -52.999985}
   m_SizeDelta: {x: 1703.255, y: -55.161987}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1028707975
@@ -28728,7 +28727,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -3.638e-12, y: -53}
+  m_AnchoredPosition: {x: -3.638e-12, y: -52.999985}
   m_SizeDelta: {x: 1703.255, y: -55.161987}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1056914080
@@ -34972,7 +34971,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -3.638e-12, y: -53}
+  m_AnchoredPosition: {x: -3.638e-12, y: -52.999985}
   m_SizeDelta: {x: 1703.255, y: -55.161987}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1293729978
@@ -37260,7 +37259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -3.638e-12, y: -53}
+  m_AnchoredPosition: {x: -3.638e-12, y: -52.999985}
   m_SizeDelta: {x: 1203.255, y: -55.161987}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1360507678
@@ -51139,7 +51138,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -3.638e-12, y: -53}
+  m_AnchoredPosition: {x: -3.638e-12, y: -52.999985}
   m_SizeDelta: {x: 1703.255, y: -55.161987}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1757538216
@@ -51884,18 +51883,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1808607407}
-        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: Back
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Menu
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1273439948}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -51911,6 +51898,30 @@ MonoBehaviour:
       - m_Target: {fileID: 1013122181}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 349888865}
+        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
+        m_MethodName: ResumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1808607407}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: Back
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -55996,6 +56007,42 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1314641479}
+        m_TargetAssemblyTypeName: ExamManager, Assembly-CSharp
+        m_MethodName: resetTest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2143277302}
+        m_TargetAssemblyTypeName: ExamManager, Assembly-CSharp
+        m_MethodName: resetTest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1757249154}
+        m_TargetAssemblyTypeName: ExamManager, Assembly-CSharp
+        m_MethodName: resetTest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 892966432}
         m_TargetAssemblyTypeName: ExamManager, Assembly-CSharp
         m_MethodName: resetTest
         m_Mode: 1
